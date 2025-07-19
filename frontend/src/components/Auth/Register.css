@@ -1,0 +1,110 @@
+/* Container for the register page */
+.register-container {
+  background-image: url("https://img.freepik.com/free-photo/top-view-delicious-food-with-copy-space_23-2149182211.jpg?t=st=1745645112~exp=1745648712~hmac=43140b50f293d3329a4dd0267ad1a29a233cc6f1edaa46362e917e09e222dd24&w=996");
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image within the container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: start; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  padding: 20px;
+}
+
+/* Form styling */
+.register-form {
+  background: rgba(255, 155, 5, 0.973); /* Semi-transparent white background for the form */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for a modern look */
+  width: 100%;
+  margin-left: 100px;
+  max-width: 450px; /* Slightly wider for better usability */
+  text-align: left; /* Align the text to the left */
+}
+
+/* Styling for input fields */
+.input-group {
+  margin-bottom: 10px; /* Increased margin for better spacing */
+}
+.head1{
+  text-align: center;
+}
+.input-group label {
+  display: block; /* Makes label a block-level element */
+  font-weight: bold;
+  color:white;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Input field styling */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Prevents padding from affecting the width */
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #fa8b0d; /* Highlight border color on focus */
+  outline: none;
+}
+
+/* Button styling */
+.register-btn {
+  background-color: #358507; /* Main brand color */
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  background-color: #095a0d; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* When the screen width is 768px or below (tablet size) */
+  .register-form {
+    padding: 25px;
+    max-width: 380px; /* Slightly smaller max-width on tablet */
+  }
+
+  .input-group input {
+    font-size: 14px; /* Adjusting font size for smaller screens */
+    padding: 12px;  /* Adjust padding for input */
+  }
+
+  .register-btn {
+    font-size: 14px; /* Smaller button text */
+    padding: 12px;   /* Adjusting padding to fit smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* When the screen width is 480px or below (mobile size) */
+  .register-form {
+    padding: 20px;
+    max-width: 280px; /* Smaller max-width on mobile */
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 10px; /* Smaller padding */
+  }
+
+  .register-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

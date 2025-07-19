@@ -1,0 +1,91 @@
+/* Main navbar styles */
+.nav {
+  background-color: #f79a0f;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Container inside navbar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Logo */
+.logo .nav-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Individual links */
+.nav-link, .logout-link {
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on links */
+.nav-link:hover, .logout-link:hover {
+  color: #f00606;
+}
+
+/* Mobile menu icon (hidden by default) */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive: for smaller screens */
+@media (max-width: 768px) {
+  /* Show hamburger only on mobile */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Make nav links vertical and hidden by default */
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #f79a0f;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    border-radius: 0 0 0 10px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* When open (menu visible) */
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  /* Adjust links inside mobile menu */
+  .nav-link, .logout-link {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+}

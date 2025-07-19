@@ -1,0 +1,230 @@
+.restaurant-card {
+  background-color: #d2f33f;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-name {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.restaurant-location,
+.restaurant-contact {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  word-break: break-word;
+}
+
+.icon {
+  color: #ff5722;
+  font-size: 1.2rem;
+}
+
+.restaurant-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.restaurant-link {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.restaurant-link:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .restaurant-card {
+    padding: 1.2rem;
+  }
+
+  .restaurant-name {
+    font-size: 1.5rem;
+  }
+
+  .restaurant-location,
+  .restaurant-contact {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurant-card {
+    padding: 1.5rem;
+  }
+
+  .restaurant-name {
+    font-size: 1.7rem;
+  }
+
+  .restaurant-location,
+  .restaurant-contact {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .restaurant-card {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .restaurant-name {
+    font-size: 1.2rem;
+  }
+
+  .restaurant-location,
+  .restaurant-contact {
+    font-size: 0.9rem;
+  }
+
+  .restaurant-link {
+    font-size: 0.9rem;
+  }
+}
+.restaurant-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-name {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.restaurant-location,
+.restaurant-contact {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  word-break: break-word;
+}
+
+.icon {
+  color: #ff5722;
+  font-size: 1.2rem;
+}
+
+.restaurant-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.restaurant-link {
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.restaurant-link:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .restaurant-card {
+    padding: 1.2rem;
+  }
+
+  .restaurant-name {
+    font-size: 1.5rem;
+  }
+
+  .restaurant-location,
+  .restaurant-contact {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurant-card {
+    padding: 1.5rem;
+  }
+
+  .restaurant-name {
+    font-size: 1.7rem;
+  }
+
+  .restaurant-location,
+  .restaurant-contact {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .restaurant-card {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .restaurant-name {
+    font-size: 1.2rem;
+  }
+
+  .restaurant-location,
+  .restaurant-contact {
+    font-size: 0.9rem;
+  }
+
+  .restaurant-link {
+    font-size: 0.9rem;
+  }
+}

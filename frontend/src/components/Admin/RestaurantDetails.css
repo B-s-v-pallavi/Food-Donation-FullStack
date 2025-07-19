@@ -1,0 +1,106 @@
+.restaurant-details-page {
+  min-height: 100vh;
+  background-image: url('https://img.freepik.com/free-photo/delicious-spanish-rice-paella-pan-white-background-with-copy-space_24972-1016.jpg?t=st=1745656906~exp=1745660506~hmac=6bf5488da00343615b0bcbbebd4f703dd1982d35299637d341d4ce2acc5cea65&w=996');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start; /* align left */
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Make a responsive wrapper */
+.restaurant-details-wrapper {
+  width: 100%;
+  max-width: 1200px; /* limit width */
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Card inside wrapper */
+.restaurant-details-card {
+  background: rgba(231, 231, 192, 0.9); /* white with slight transparency */
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography and button styling */
+.head {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff5722;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #ff5722;
+}
+
+.ht {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.co{
+  color: white;
+}
+/* Buttons styling */
+.toggle-btn,
+.take-btn,
+.back-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  margin-right: 15px; /* Add space between buttons */
+}
+
+.toggle-btn:hover,
+.take-btn:hover,
+.back-btn:hover {
+  background-color: #e64a19;
+}
+
+.food-items-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 2px solid #333; /* Add dark outer border */
+}
+
+.food-items-table th,
+.food-items-table td {
+  border: 2px solid #333; /* Dark inner borders */
+  padding: 10px;
+  text-align: center;
+}
+
+.food-items-table th {
+  background-color: #eb6035;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .restaurant-details-page {
+    justify-content: center; /* center content on mobile */
+  }
+
+  .restaurant-details-wrapper {
+    justify-content: center;
+  }
+
+  /* Keep buttons side by side, but allow some space between them */
+  .toggle-btn,
+  .take-btn,
+  .back-btn {
+    margin-right: 10px; /* Reduced space between buttons on smaller screens */
+  }
+}

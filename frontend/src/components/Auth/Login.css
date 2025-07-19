@@ -1,0 +1,113 @@
+/* Container for the login page */
+.login-container {
+  background-image: url("https://img.freepik.com/free-photo/delicious-food-arrangement-flat-lay_23-2149182252.jpg?t=st=1745644064~exp=1745647664~hmac=557889ad51d5723eb0eb2fc5037a490ea941ef5d5babe773f2e525025dd2a351&w=996");
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image within the container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form styling */
+.login-form {
+  background: rgba(228, 115, 40, 0.993); /* Semi-transparent white background for the form */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer shadow for a modern look */
+  width: 100%;
+  max-width: 450px; /* Slightly wider for better usability */
+  text-align: center;
+  margin-left: 600px; /* Start from the left, with space on the right */
+ /* Add space on the right for responsiveness */
+}
+
+/* Styling for input fields */
+.input-group {
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #220909;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Prevents padding from affecting the width */
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #fa8b0d; /* Highlight border color on focus */
+  outline: none;
+}
+
+/* Button styling */
+.login-btn {
+  background-color:rgb(2, 206, 63); /* Main brand color */
+  color: #1b1418;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #0e9c1a; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* When the screen width is 768px or below (tablet size) */
+  .login-form {
+    padding: 25px;
+    max-width: 380px; /* Slightly smaller max-width on tablet */
+    margin-left: 5%; /* Reduce left margin on tablet */
+    margin-right: 5%; /* Reduce right margin on tablet */
+  }
+
+  .input-group input {
+    font-size: 14px; /* Adjusting font size for smaller screens */
+    padding: 12px;  /* Adjust padding for input */
+  }
+
+  .login-btn {
+    font-size: 14px; /* Smaller button text */
+    padding: 12px;   /* Adjusting padding to fit smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* When the screen width is 480px or below (mobile size) */
+  .login-form {
+    padding: 20px;
+    max-width: 280px; /* Smaller max-width on mobile */
+    margin-left: 5%; /* Reduced left margin on mobile */
+    margin-right: 5%; /* Reduced right margin on mobile */
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 10px; /* Smaller padding */
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
