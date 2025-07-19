@@ -13,7 +13,7 @@ const AdminDashboard = () => {
 
   const fetchRestaurants = () => {
     axios
-      .get("http://localhost:5000/api/restaurant")
+      .get("https://food-donation-fullstack.onrender.com/api/restaurant")
       .then((res) => {
         setRestaurants(res.data);
         setLoading(false);
@@ -31,7 +31,7 @@ const AdminDashboard = () => {
   const handleDelete = (id) => {
     const token = localStorage.getItem("token");
     axios
-      .delete(`http://localhost:5000/api/restaurant/${id}`, {
+      .delete(`https://food-donation-fullstack.onrender.com/api/restaurant/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(() => {

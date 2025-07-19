@@ -14,7 +14,7 @@ const RestaurantDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/restaurant/${id}`)
+      .get(`https://food-donation-fullstack.onrender.com/api/restaurant/${id}`)
       .then((res) => {
         setRestaurant(res.data);
         setLoading(false);
@@ -28,7 +28,7 @@ const RestaurantDetails = () => {
   const handleTake = async (foodItemName) => {
     const token = localStorage.getItem("token");
     await axios
-      .delete(`http://localhost:5000/api/restaurant/${id}/fooditems/${foodItemName}`, {
+      .delete(`https://food-donation-fullstack.onrender.com/api/restaurant/${id}/fooditems/${foodItemName}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then(() => {
