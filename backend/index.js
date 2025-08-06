@@ -18,7 +18,7 @@ connectDB();
 
 if (process.env.NODE_ENV !== "production")  {
   app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://food-donation-fullstack.onrender.com",
     credentials: true
   }));
 }
