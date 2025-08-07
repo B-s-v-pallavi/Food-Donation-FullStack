@@ -56,9 +56,12 @@ const AddRestaurant = () => {
     const restaurantData = { ...restaurant, availableFoodItems: foodItems };
 
      axios
-      .post("https://food-donation-fullstack.onrender.com/api/restaurant", restaurantData, {
+      .post(`${import.meta.env.VITE_BACKEND_API}/api/restaurant`, restaurantData, {
         headers: { Authorization: `Bearer ${token}` },
       })
+      // .post("https://food-donation-fullstack.onrender.com/api/restaurant", restaurantData, {
+      //   headers: { Authorization: `Bearer ${token}` },
+      // })
       .then((res) => {
         alert("Restaurant added successfully!");
         setRestaurant({ name: "", description: "", location: "", contact: "" });

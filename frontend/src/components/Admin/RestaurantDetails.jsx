@@ -14,7 +14,8 @@ const RestaurantDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`https://food-donation-fullstack.onrender.com/api/restaurant/${id}`)
+      .get(`${import.meta.env.VITE_BACKEND_API}/api/restaurant/${id}`)
+      // .get(`https://food-donation-fullstack.onrender.com/api/restaurant/${id}`)
       .then((res) => {
         setRestaurant(res.data);
         setLoading(false);
@@ -28,9 +29,12 @@ const RestaurantDetails = () => {
   const handleTake = async (foodItemName) => {
     const token = localStorage.getItem("token");
     await axios
-      .delete(`https://food-donation-fullstack.onrender.com/api/restaurant/${id}/fooditems/${foodItemName}`, {
+      .delete(`${import.meta.env.VITE_BACKEND_API}/api/restaurant/${id}/footitems/${foodItemName}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
+      // .delete(`https://food-donation-fullstack.onrender.com/api/restaurant/${id}/fooditems/${foodItemName}`, {
+      //   headers: { Authorization: `Bearer ${token}` },
+      // })
       .then(() => {
         const updatedFoodItems = restaurant.availableFoodItems.filter(
           (item) => item.name !== foodItemName
