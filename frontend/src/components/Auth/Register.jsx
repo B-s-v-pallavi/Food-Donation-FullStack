@@ -21,7 +21,7 @@ export default function Register() {
   function handleRegister(e) {
     e.preventDefault();
     axios
-      .post(`${import.meta.env.VITE_BACKEND_API}/api/auth/signup`, formData)
+      .post(`https://food-donation-fullstack.onrender.com/api/auth/signup`, formData)
       // .post("https://food-donation-fullstack.onrender.com/signup", formData)
       .then((res) => {
         console.log("Registration successful", res);
