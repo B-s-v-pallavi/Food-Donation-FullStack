@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     if (showRestaurants) {
       axios
-        .get(`https://food-donation-fullstack.onrender.com/api/restaurant`)
+        .get(`${import.meta.env.VITE_BACKEND_API}/api/restaurant`)
         // .get("https://food-donation-fullstack.onrender.com/api/restaurant")
         .then((res) => setRestaurants(res.data))
         .catch((err) =>
